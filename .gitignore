@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.db
+*.db-shm
+*.db-wal
+*.log
+node_modules/
+.env
+# the client dataset is not published (see README)
+/events.jsonl
+/orders.csv
+/ad_spend.csv

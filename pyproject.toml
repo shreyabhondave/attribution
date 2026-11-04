@@ -1,0 +1,11 @@
+[tool.ruff]
+line-length = 130
+target-version = "py311"
+extend-exclude = ["frontend", "docs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["B008", "E501"]   # B008: FastAPI's Query()/Body() defaults are the framework idiom
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
